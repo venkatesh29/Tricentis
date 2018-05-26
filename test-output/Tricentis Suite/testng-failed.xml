@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Tricentis Suite]">
+  <test name="Tricentis Regression 4.3(failed)">
+    <classes>
+      <class name="com.Tricentis.qa.testcases.extenterinsurantdata">
+        <methods>
+          <include name="Setup"/>
+          <include name="tearDown"/>
+          <include name="EnterForm" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.Tricentis.qa.testcases.extenterinsurantdata -->
+    </classes>
+  </test> <!-- Tricentis Regression 4.3(failed) -->
+</suite> <!-- Failed suite [Tricentis Suite] -->

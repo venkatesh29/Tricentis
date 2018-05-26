@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Tricentis Suite</th></tr><tr><td><a href="#t0">Tricentis Regression 4.3</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">109,098</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Tricentis Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Tricentis Regression 4.3 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.Tricentis.qa.testcases.extenterinsurantdata</td><td><a href="#m0">tearDown</a></td><td rowspan="1">1526028259604</td><td rowspan="1">0</td></tr><tr><th colspan="4">Tricentis Regression 4.3 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.Tricentis.qa.testcases.extenterinsurantdata</td><td><a href="#m1">EnterForm</a></td><td rowspan="1">1526028234993</td><td rowspan="1">24600</td></tr></tbody></table><h2>Tricentis Regression 4.3</h2><h3 id="m0">com.Tricentis.qa.testcases.extenterinsurantdata#tearDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;DESKTOP-Q39NDVJ&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 77bff395-2afa-48a0-91c2-02e9e39ff126
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
+	at com.Tricentis.qa.testcases.extenterinsurantdata.tearDown(extenterinsurantdata.java:94)
+Caused by: org.apache.http.ConnectionClosedException: Premature end of Content-Length delimited message body (expected: 2865; received: 0
+	at org.apache.http.impl.io.ContentLengthInputStream.read(ContentLengthInputStream.java:180)
+	at org.apache.http.impl.io.ContentLengthInputStream.read(ContentLengthInputStream.java:200)
+	at org.apache.http.impl.io.ContentLengthInputStream.close(ContentLengthInputStream.java:103)
+	at org.apache.http.impl.execchain.ResponseEntityProxy.streamClosed(ResponseEntityProxy.java:140)
+	at org.apache.http.conn.EofSensorInputStream.checkClose(EofSensorInputStream.java:228)
+	at org.apache.http.conn.EofSensorInputStream.close(EofSensorInputStream.java:174)
+	at org.apache.http.util.EntityUtils.consume(EntityUtils.java:88)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.createResponse(ApacheHttpClient.java:113)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:94)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 30 more
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.Tricentis.qa.testcases.extenterinsurantdata#EnterForm</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{AnnualMileage=50004, TC_ID=TC_ID_5, NumberOfSeats=5, Model=Scooter, Make=Opel, EnginePerformance=1700, ListPrice=45000, DateOfManufacture=04/20/2009, CylinderCapacity=800, FuelType=Petrol, LicensePlateNumber=ABN123LPN460}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Command duration or timeout: 88 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;DESKTOP-Q39NDVJ&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 77bff395-2afa-48a0-91c2-02e9e39ff126
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.Tricentis.qa.pages.EnterVehicleData.Clickopendateofmanufacturecalender(EnterVehicleData.java:120)
+	at com.Tricentis.qa.testcases.extenterinsurantdata.EnterForm(extenterinsurantdata.java:79)
+Caused by: org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;DESKTOP-Q39NDVJ&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/Dell/AppData/Local/Temp/anonymous5155247521064480802webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12715)
+	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/Dell/AppData/Local/Temp/anonymous5155247521064480802webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9558)
+	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/Dell/AppData/Local/Temp/anonymous5155247521064480802webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9705)
+	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/Dell/AppData/Local/Temp/anonymous5155247521064480802webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9652)
+	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/Dell/AppData/Local/Temp/anonymous5155247521064480802webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:12517)
+	at &lt;anonymous class&gt;.createHandlerFunc/&lt;(file:///C:/Users/Dell/AppData/Local/Temp/anonymous5155247521064480802webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2054)
+	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/Dell/AppData/Local/Temp/anonymous5155247521064480802webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2387)
+	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/Dell/AppData/Local/Temp/anonymous5155247521064480802webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1223)
+	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/Dell/AppData/Local/Temp/anonymous5155247521064480802webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1677)
+	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/Dell/AppData/Local/Temp/anonymous5155247521064480802webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1525)
+	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/Dell/AppData/Local/Temp/anonymous5155247521064480802webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1393)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

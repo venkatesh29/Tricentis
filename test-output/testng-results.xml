@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Tricentis Suite" duration-ms="109098" started-at="2018-05-11T08:42:30Z" finished-at="2018-05-11T08:44:19Z">
+    <groups>
+    </groups>
+    <test name="Tricentis Regression 4.3" duration-ms="109098" started-at="2018-05-11T08:42:30Z" finished-at="2018-05-11T08:44:19Z">
+      <class name="com.Tricentis.qa.testcases.extenterinsurantdata">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.Tricentis.qa.testcases.extenterinsurantdata@91161c7]" name="Setup" is-config="true" duration-ms="81001" started-at="2018-05-11T14:12:33Z" finished-at="2018-05-11T14:13:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="FAIL" signature="EnterForm(java.util.HashMap)[pri:0, instance:com.Tricentis.qa.testcases.extenterinsurantdata@91161c7]" name="EnterForm" duration-ms="24600" started-at="2018-05-11T14:13:54Z" data-provider="Data" finished-at="2018-05-11T14:14:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{AnnualMileage=50004, TC_ID=TC_ID_5, NumberOfSeats=5, Model=Scooter, Make=Opel, EnginePerformance=1700, ListPrice=45000, DateOfManufacture=04/20/2009, CylinderCapacity=800, FuelType=Petrol, LicensePlateNumber=ABN123LPN460}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Window not found. The browser window may have been closed.
+Command duration or timeout: 88 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-Q39NDVJ', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 77bff395-2afa-48a0-91c2-02e9e39ff126]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Command duration or timeout: 88 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-Q39NDVJ', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 77bff395-2afa-48a0-91c2-02e9e39ff126
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.Tricentis.qa.pages.EnterVehicleData.Clickopendateofmanufacturecalender(EnterVehicleData.java:120)
+	at com.Tricentis.qa.testcases.extenterinsurantdata.EnterForm(extenterinsurantdata.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-Q39NDVJ', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: unknown
+	at <anonymous class>.nsCommandProcessor.prototype.execute(file:///C:/Users/Dell/AppData/Local/Temp/anonymous5155247521064480802webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12715)
+	at <anonymous class>.Dispatcher.executeAs/<(file:///C:/Users/Dell/AppData/Local/Temp/anonymous5155247521064480802webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9558)
+	at <anonymous class>.Resource.prototype.handle(file:///C:/Users/Dell/AppData/Local/Temp/anonymous5155247521064480802webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9705)
+	at <anonymous class>.Dispatcher.prototype.dispatch(file:///C:/Users/Dell/AppData/Local/Temp/anonymous5155247521064480802webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9652)
+	at <anonymous class>.WebDriverServer/<.handle(file:///C:/Users/Dell/AppData/Local/Temp/anonymous5155247521064480802webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:12517)
+	at <anonymous class>.createHandlerFunc/<(file:///C:/Users/Dell/AppData/Local/Temp/anonymous5155247521064480802webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2054)
+	at <anonymous class>.ServerHandler.prototype.handleResponse(file:///C:/Users/Dell/AppData/Local/Temp/anonymous5155247521064480802webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2387)
+	at <anonymous class>.Connection.prototype.process(file:///C:/Users/Dell/AppData/Local/Temp/anonymous5155247521064480802webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1223)
+	at <anonymous class>.RequestReader.prototype._handleResponse(file:///C:/Users/Dell/AppData/Local/Temp/anonymous5155247521064480802webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1677)
+	at <anonymous class>.RequestReader.prototype._processBody(file:///C:/Users/Dell/AppData/Local/Temp/anonymous5155247521064480802webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1525)
+	at <anonymous class>.RequestReader.prototype.onInputStreamReady(file:///C:/Users/Dell/AppData/Local/Temp/anonymous5155247521064480802webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1393)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnterForm -->
+        <test-method status="FAIL" signature="tearDown()[pri:0, instance:com.Tricentis.qa.testcases.extenterinsurantdata@91161c7]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-05-11T14:14:19Z" finished-at="2018-05-11T14:14:19Z">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-Q39NDVJ', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 77bff395-2afa-48a0-91c2-02e9e39ff126]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-Q39NDVJ', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 77bff395-2afa-48a0-91c2-02e9e39ff126
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
+	at com.Tricentis.qa.testcases.extenterinsurantdata.tearDown(extenterinsurantdata.java:94)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.apache.http.ConnectionClosedException: Premature end of Content-Length delimited message body (expected: 2865; received: 0
+	at org.apache.http.impl.io.ContentLengthInputStream.read(ContentLengthInputStream.java:180)
+	at org.apache.http.impl.io.ContentLengthInputStream.read(ContentLengthInputStream.java:200)
+	at org.apache.http.impl.io.ContentLengthInputStream.close(ContentLengthInputStream.java:103)
+	at org.apache.http.impl.execchain.ResponseEntityProxy.streamClosed(ResponseEntityProxy.java:140)
+	at org.apache.http.conn.EofSensorInputStream.checkClose(EofSensorInputStream.java:228)
+	at org.apache.http.conn.EofSensorInputStream.close(EofSensorInputStream.java:174)
+	at org.apache.http.util.EntityUtils.consume(EntityUtils.java:88)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.createResponse(ApacheHttpClient.java:113)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:94)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Tricentis.qa.testcases.extenterinsurantdata -->
+    </test> <!-- Tricentis Regression 4.3 -->
+  </suite> <!-- Tricentis Suite -->
+</testng-results>
